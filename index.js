@@ -8,7 +8,7 @@ const server=http.createServer((req,res)=>{
     console.log(url)
     // handler
     if(req.url==="/"){
-        res.end("It shows directories: data, src, public etc")
+       return res.end("<h1>Wanna directory?</h1>")
        
     }
     else if(req.url==="/public"){
